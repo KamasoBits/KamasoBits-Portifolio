@@ -1,0 +1,30 @@
+@import url(https://fonts.googleapis.com/css?family=Righteous);
+@import url(https://fonts.googleapis.com/css?family=Black+Ops+One);
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: 'Righteous',Arial, sans-serif;
+    font-size: 22px;
+
+}
+h2{
+    font-size: 25px;
+   
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    width: 350px;
+    justify-content: space-between;
+
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+
