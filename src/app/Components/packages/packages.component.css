@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Tangerine);
 @import url(https://fonts.googleapis.com/css2?family=Acme&family=Caveat);
 @import url(https://fonts.googleapis.com/css2?family=Kaushan+Script);
+@import url(https://fonts.googleapis.com/css2?family=Delius);
 
 h1{
     font-family: 'Kaushan Script';
@@ -45,7 +46,8 @@ h2{
 }
 
 .card-description {
-    font-size: 1em; /* Standard font size */
+    font-size: 1em;
+    font-family: 'Delius' ; /* Standard font size */
     color: #666; /* Slightly lighter text color */
     line-height: 1.5; /* Improved readability */
     margin-bottom: 15px; /* Space below the description */
@@ -56,7 +58,8 @@ h2{
     background-color: #007bff; /* Blue background for the button */
     color: white; /* White text color */
     padding: 10px 15px; /* Padding inside the button */
-    border-radius: 5px; /* Rounded corners for the button */
+    border-radius: 20px 30px;
+    border-color: aq; /* Rounded corners for the button */
     text-decoration: none; /* Remove underline from link */
     transition: background-color 0.3s ease; /* Smooth transition on hover */
 }

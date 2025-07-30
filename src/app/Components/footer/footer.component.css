@@ -106,7 +106,7 @@ h3{
 
 /* Footer Bottom Bar */
 .footer-bottom {
-    background-color: var(--footer-bg-medium);
+    background-color: #777dca;
     padding: 20px 0;
     text-align: center;
     font-size: 0.85em;
@@ -139,3 +139,5 @@ h3{
         text-align: left; /* Keep list text aligned left */
     }
 }
+
+
