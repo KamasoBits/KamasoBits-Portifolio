@@ -1,0 +1,141 @@
+@import url(https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap);
+
+h3{
+    font-family: 'Protest Revolution',sans-serif;
+}
+
+/* Three-Section Footer Styles */
+.footer {
+    background-color: #bfc0d3;
+    color: var(--footer-text-light);
+    padding-top: 50px; /* Padding for sections */
+    flex-shrink: 0; /* Prevents footer from shrinking */
+}
+
+.footer .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* 3 columns, responsive */
+    gap: 30px; /* Space between columns */
+    padding-bottom: 40px; /* Space above bottom bar */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle separator */
+}
+
+.footer-section {
+    padding: 15px 0;
+}
+
+.footer-section h3 {
+    font-family: var(--font-heading);
+    font-size: 1.4em;
+    color: var(--footer-text-light);
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-section h3::after { /* Underline effect for headings */
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50px;
+    height: 3px;
+    background-color: var(--accent-icon-color);
+    border-radius: 2px;
+}
+
+.footer-section p {
+    font-size: 0.95em;
+    margin-bottom: 10px;
+    line-height: 1.7;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a,
+.footer-section p a {
+    color: var(--footer-link-color);
+    text-decoration: none;
+    font-size: 0.95em;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover,
+.footer-section p a:hover {
+    color: var(--footer-link-hover);
+}
+
+.footer-section i { /* Icons within text/list items */
+    color: var(--accent-icon-color);
+    margin-right: 8px;
+    font-size: 1.1em;
+}
+
+/* Social Links specific styling */
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-flex; /* Use flex to center icon */
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--footer-text-light);
+    border-radius: 50%; /* Make them round */
+    text-decoration: none;
+    margin-right: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 1.2em;
+}
+
+.social-links a:hover {
+    background-color: var(--footer-link-hover);
+    color: var(--white);
+}
+
+/* Footer Bottom Bar */
+.footer-bottom {
+    background-color: var(--footer-bg-medium);
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.85em;
+    color: var(--footer-link-color);
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .footer .footer-grid {
+        grid-template-columns: 1fr; /* Stack columns on smaller screens */
+        text-align: center; /* Center text for stacked layout */
+        padding-bottom: 20px; /* Reduce padding for mobile */
+    }
+
+    .footer-section h3::after { /* Re-center underline for mobile */
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .footer-section {
+        padding: 25px 0; /* More vertical padding between stacked sections */
+    }
+
+    .social-links {
+        text-align: center;
+    }
+
+    .footer-section ul {
+        display: inline-block; /* Allow list items to be centered */
+        text-align: left; /* Keep list text aligned left */
+    }
+}

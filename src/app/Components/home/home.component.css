@@ -104,6 +104,18 @@
 
 
 }
+
+.btn{
+    width: 90px;
+    height: 40px;
+    color: #000000;
+    font-size: 15px;
+    font-family: cursive;
+    border-radius: 20px 30px;
+    border-color: aqua;
+    text-align: center;
+    align-items: center;
+}
 .wave-text span {
     display: inline-block;
     font-size: 4rem;
@@ -155,4 +167,13 @@
 @keyframes blinkingCursor{
   from { border-right-color: rgba(255,255,255,.75); }
   to { border-right-color: transparent; }
+}
+
+@media screen  and(max-width:768px){
+  .details-background{
+    justify-content: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
 }
