@@ -1,14 +1,12 @@
-@import url(https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap);
-
-h3{
-    font-family: 'Protest Revolution',sans-serif;
-}
+@import url(https://fonts.googleapis.com/css2?family=Protest+Revolution);
+@import url(https://fonts.googleapis.com/css2?family=Autour+One);
+@import url(https://fonts.googleapis.com/css2?family=My+Soul);
 
 /* Three-Section Footer Styles */
 .footer {
     background-color: #bfc0d3;
     color: var(--footer-text-light);
-    padding-top: 50px; /* Padding for sections */
+    padding-top: 30px; /* Padding for sections */
     flex-shrink: 0; /* Prevents footer from shrinking */
 }
 
@@ -17,15 +15,16 @@ h3{
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* 3 columns, responsive */
     gap: 30px; /* Space between columns */
     padding-bottom: 40px; /* Space above bottom bar */
+    padding-left: 20px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle separator */
 }
 
 .footer-section {
-    padding: 15px 0;
+    padding: 10px 0;
 }
 
 .footer-section h3 {
-    font-family: var(--font-heading);
+    font-family: 'Protest Revolution';
     font-size: 1.4em;
     color: var(--footer-text-light);
     margin-bottom: 20px;
@@ -45,9 +44,11 @@ h3{
 }
 
 .footer-section p {
-    font-size: 0.95em;
-    margin-bottom: 10px;
+    font-size: 0.90em;
+    font-family: 'Autour One';
+    margin-bottom: 5px;
     line-height: 1.7;
+
 }
 
 .footer-section ul {
@@ -65,12 +66,13 @@ h3{
     color: var(--footer-link-color);
     text-decoration: none;
     font-size: 0.95em;
+    font-family: 'Autour One';
     transition: color 0.3s ease;
 }
 
 .footer-section ul li a:hover,
 .footer-section p a:hover {
-    color: var(--footer-link-hover);
+    color: #b86522;
 }
 
 .footer-section i { /* Icons within text/list items */
@@ -107,9 +109,10 @@ h3{
 /* Footer Bottom Bar */
 .footer-bottom {
     background-color: #777dca;
-    padding: 20px 0;
+    padding: 10px ;
     text-align: center;
-    font-size: 0.85em;
+    font-size: 1.5em;
+    font-family: 'My Soul';
     color: var(--footer-link-color);
 }
 

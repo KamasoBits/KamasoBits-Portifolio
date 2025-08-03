@@ -169,10 +169,15 @@
   to { border-right-color: transparent; }
 }
 
+.gradient{
+  background: linear-gradient(to bottom, #ff69b4, #800080);
+  height: auto;
+  width: auto;
+}
+
 @media screen  and(max-width:768px){
   .details-background{
     justify-content: flex-start;
-    max-width: 1200px;
     margin: 0 auto;
   }
   
