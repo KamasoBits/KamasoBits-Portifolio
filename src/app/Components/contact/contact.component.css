@@ -1,5 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Emilys+Candy);
-
+@import url(https://fonts.googleapis.com/css2?family=Yesteryear);
 h1{
     align-items: center;
     text-align: center;
@@ -7,6 +7,14 @@ h1{
     font-family: 'Emilys Candy';
    text-decoration: underline;
   
+}
+
+.contact-page{
+    display: flex;
+    margin: 20px;
+    gap: 20px;
+    align-items: center;
+    border: 3px solid black;
 }
 
 .contact-form {
@@ -70,14 +78,14 @@ h1{
     width: 90px;
     height: 40px;
     color: #007bff;
-    font-size: 15px;
+    font-size: 20px;
+    font-family:'Yesteryear';
     border-radius: 20px 30px;
     border-color: aqua;
     text-align: center;
     align-items: center;
 }
 
-.vertical-line{
-    border-left: 1px solid yellowgreen;
-    height: 60px;
+.btn:hover{
+    background-color: #c9ec77;
 }
