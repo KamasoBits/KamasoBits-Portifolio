@@ -8,6 +8,7 @@ nav {
     margin-bottom: 10px;
     font-family: 'Righteous', sans-serif;
     font-size: 22px;
+    margin-right: 10px;
 
 }
 
@@ -74,45 +75,19 @@ ul li a {
     text-decoration: none;
 }
 
-@media (max-width: 992px) {
-    .main-header h1 {
-        font-size: 3em;
-    }
-    .main-header p {
-        font-size: 1.1em;
-    }
-    .section h2 {
-        font-size: 2.2em;
-    }
-    .about-story .content-wrapper {
-        flex-direction: column; /* Stack content on medium screens */
-        text-align: center;
-    }
-    .about-story .image-content {
-        margin-top: 30px;
-    }
-}
+
 
 @media (max-width: 768px) {
     .navbar{
-        padding: 40px 0;
+        padding: 0px;
+        margin-right: 10px;
     }
     .navbar h2 {
-        font-size: 2.5em;
-    }
-    
-
-    
-  
-}
-
-@media (max-width: 480px) {
-    .navbar {
         font-size: 0.5em;
     }
-    
-    h2 {
-        font-size: 1.0em;
+    .ul li {
+        font-size: 0.5em;
     }
-   
+  
+  
 }

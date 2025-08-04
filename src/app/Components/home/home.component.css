@@ -1,8 +1,11 @@
+@import url(https://fonts.googleapis.com/css2?family=Coustard);
+
+
 .stars {
-  width: 1px;
-  height: 1px;
+  width: 5px;
+  height: 5px;
   position: absolute;
-  background: rgb(4, 122, 67);
+  background: rgb(155, 185, 19);
   box-shadow: 2vw 5vh 2px white, 10vw 8vh 2px white, 15vw 15vh 1px white,
     22vw 22vh 1px white, 28vw 12vh 2px white, 32vw 32vh 1px white,
     38vw 18vh 2px white, 42vw 35vh 1px white, 48vw 25vh 2px white,
@@ -70,8 +73,8 @@
 .stars::after {
   content: "";
   position: absolute;
-  width: 1px;
-  height: 1px;
+  width: 5px;
+  height: 5px;
   background: rgb(185, 174, 16);
   box-shadow: 8vw 12vh 2px white, 16vw 18vh 1px white, 24vw 25vh 2px white,
     33vw 15vh 1px white, 41vw 28vh 2px white, 49vw 35vh 1px white,
@@ -86,35 +89,41 @@
 
 .details-background{
     display: grid;
-    background-color: #007bff;
+    background-image: url('/assets/images/circuit.jpg');
     padding-top: 0%;
     align-items: center;
-    height: 600px;
+    height: 810px;
     width: 100%;
     border-radius: 20px 80px;
-    font-size: 20px;
-    font-family:cursive;
-    color: transparent;
+    font-size: 15px;
+    font-family:'Coustard';
+    color: #000000;
 }
 
 .details{
     justify-content: center;
     text-align: center;
-    color: #9f9bbd;
+    color:#000000;
 
 
 }
 
 .btn{
-    width: 90px;
-    height: 40px;
+    width: 150px;
+    height: 50px;
     color: #000000;
-    font-size: 15px;
+    font-size: 20px;
     font-family: cursive;
     border-radius: 20px 30px;
     border-color: aqua;
+    margin-top: 50px;
     text-align: center;
     align-items: center;
+}
+
+.btn:hover{
+  color: #420642;
+  background-color: #b6f157;
 }
 .wave-text span {
     display: inline-block;
@@ -144,6 +153,7 @@
     }
 }
 .cursor{
+  display: inline-block;
     position: relative;
     width: 24em;
     margin: 0 auto;
@@ -162,22 +172,17 @@
 }
 @keyframes typewriter {
   from { width: 0; }
-  to { width: 100%; }
+  to { width: 51%; }
 }
 @keyframes blinkingCursor{
   from { border-right-color: rgba(255,255,255,.75); }
   to { border-right-color: transparent; }
 }
 
-.gradient{
-  background: linear-gradient(to bottom, #ff69b4, #800080);
-  height: auto;
-  width: auto;
-}
 
 @media screen  and(max-width:768px){
   .details-background{
-    justify-content: flex-start;
+    width: auto;
     margin: 0 auto;
   }
   

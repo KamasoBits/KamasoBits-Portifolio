@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { PackagesComponent } from "../packages/packages.component";
 import { ProjectsComponent } from "../projects/projects.component";
 import { FooterComponent } from "../footer/footer.component";
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 
 @Component({
@@ -9,7 +10,8 @@ import { FooterComponent } from "../footer/footer.component";
   imports: [
     PackagesComponent,
     ProjectsComponent,
-    FooterComponent
+    FooterComponent,RouterLink,
+    RouterLinkActive
 ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
