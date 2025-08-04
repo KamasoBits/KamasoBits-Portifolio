@@ -1,73 +1,26 @@
-@import url(https://fonts.googleapis.com/css2?family=Montserrat);
+@import url(https://fonts.googleapis.com/css2?family=Rancho);
+@import url(https://fonts.googleapis.com/css2?family=Oldenburg);
+@import url(https://fonts.googleapis.com/css2?family=Arizonia);
 
 
-
-/* Color Palette */
-:root {
-    --primary-blue: #007bff;   /* Main Brand Blue */
-    --accent-green: #28a745;   /* Accent Green */
-    --light-bg: #f8f9fa;      /* Light Gray Background */
-    --dark-text: #343a40;     /* Dark Text */
-    --gray-text: #6c757d;     /* Muted Gray Text */
-    --white: #ffffff;
-    --shadow-light: rgba(0, 0, 0, 0.1);
-    --shadow-strong: rgba(0, 0, 0, 0.2);
-}
-
-/* Base Styles */
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: var(--light-bg);
-    color: var(--dark-text);
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
 
 .container {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 25px; /* Consistent horizontal padding */
-}
-
-/* Header Section */
-.main-header {
-    background-color: var(--primary-blue);
-    color: var(--white);
-    padding: 60px 0;
-    text-align: center;
-    box-shadow: 0 4px 10px var(--shadow-strong);
-    margin-bottom: 40px;
-}
-
-.main-header h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-size: 3.5em;
-    margin: 0;
-    letter-spacing: 1px;
-}
-
-.main-header p {
-    font-size: 1.3em;
-    margin-top: 10px;
-    opacity: 0.9;
 }
 
 /* General Section Styling */
 .section {
     background-color: var(--white);
-    padding: 50px 40px;
+    padding: 5px 40px;
     margin-bottom: 30px;
     border-radius: 8px;
     box-shadow: 0 2px 8px var(--shadow-light);
 }
 
 .section h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Arizonia';
     font-weight: 600;
     font-size: 2.5em;
     color: var(--primary-blue);
@@ -91,6 +44,8 @@ body {
 
 .section p {
     font-size: 1.05em;
+    font-family: Oldenburg;
+
     color: var(--dark-text);
 }
 
@@ -122,12 +77,12 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 .value-item {
     background-color: var(--light-bg);
-    padding: 30px;
+    padding: 20px;
     border: 1px solid #fff;
     border-radius: 8px;
     box-shadow: 0 2px 6px var(--shadow-light);
@@ -145,11 +100,11 @@ body {
 .value-item .icon {
     font-size: 3.5em;
     color: var(--primary-blue);
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .value-item h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Rancho';
     font-weight: 600;
     color: var(--dark-text);
     font-size: 1.6em;
@@ -163,25 +118,9 @@ body {
 
 
 
-/* Footer Section */
-.main-footer {
-    background-color: var(--dark-text);
-    color: var(--white);
-    text-align: center;
-    padding: 25px 0;
-    margin-top: 50px;
-    font-size: 0.9em;
-    box-shadow: 0 -2px 8px var(--shadow-strong);
-}
-
 /* --- Responsive Adjustments --- */
 @media (max-width: 992px) {
-    .main-header h1 {
-        font-size: 3em;
-    }
-    .main-header p {
-        font-size: 1.1em;
-    }
+
     .section h2 {
         font-size: 2.2em;
     }
@@ -195,15 +134,7 @@ body {
 }
 
 @media (max-width: 768px) {
-    .main-header {
-        padding: 40px 0;
-    }
-    .main-header h1 {
-        font-size: 2.5em;
-    }
-    .main-header p {
-        font-size: 1em;
-    }
+   
     .section {
         padding: 30px 20px;
     }
@@ -225,12 +156,7 @@ body {
 }
 
 @media (max-width: 480px) {
-    .main-header h1 {
-        font-size: 2em;
-    }
-    .main-header p {
-        font-size: 0.9em;
-    }
+  
     .section h2 {
         font-size: 1.8em;
     }
