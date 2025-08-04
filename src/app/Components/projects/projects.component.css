@@ -18,13 +18,14 @@ h2{
 }
 
 p{
+    display: flex;
     font-size: 30px;
     font-family: 'Protest Revolution';
 }
 
 hr{
     width: 70%;
-    color: rgb(88, 174, 214);
+    color: rgb(2, 6, 8);
 }
 
 .tech-stack{
