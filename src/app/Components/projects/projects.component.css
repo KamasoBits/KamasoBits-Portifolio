@@ -2,6 +2,17 @@
 @import url(https://fonts.googleapis.com/css2?family=Protest+Revolution);
 @import url(https://fonts.googleapis.com/css2?family=Ribeye+Marrow);
 
+.projects-container{
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    width: auto;
+    height: 500px;
+    background-color: rgb(233, 180, 224 ,0.5);
+    border-radius: 30px 50px;
+    box-shadow: 0 8px 50px rgb(233, 180, 224 ,0.5);
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out;
+}
 .projects{
     max-width: auto;
     

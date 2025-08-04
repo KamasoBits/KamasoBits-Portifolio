@@ -1,7 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Tangerine);
 @import url(https://fonts.googleapis.com/css2?family=Acme&family=Caveat);
 @import url(https://fonts.googleapis.com/css2?family=Kaushan+Script);
-@import url(https://fonts.googleapis.com/css2?family=Delius);
+@import url(https://fonts.googleapis.com/css2?family=Delius&family=My+Soul);
+
 
 h1{
     font-family: 'Kaushan Script';
@@ -19,8 +20,11 @@ h2{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 3px;
+    padding-top: 5px;
     padding: 10px;
     margin: 0 auto;
+    
+  
 }
 
 .card {
@@ -31,7 +35,8 @@ h2{
     margin: 20px; /* Space around the card */
     overflow: hidden; /* Ensures content respects border-radius */
     background-color: #fff; /* White background */
-    font-family: Arial, sans-serif; /* Readable font */
+      backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 
@@ -56,8 +61,10 @@ h2{
 
 .card-button {
     display: inline-block; /* Allows padding and margin to be applied */
-    background-color: #007bff; /* Blue background for the button */
+    background-color: #272527; /* Blue background for the button */
     color: white; /* White text color */
+    font-family: 'Caveat' ;
+    font-size: 20px;
     padding: 10px 15px; /* Padding inside the button */
     border-radius: 20px 30px;
     border-color: aq; /* Rounded corners for the button */
@@ -66,14 +73,15 @@ h2{
 }
 
 .card:hover {
-    border-color: #007bff; /* New border color on hover (blue) */
-    transform: translateY(-5px); /* Optional: slight lift effect */
+    border-color: #33234d; 
+    transform: translateY(-10px); /* Optional: slight lift effect */
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Optional: subtle shadow change */
 }
 
 .card-button:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0c300a; 
 }
+
 
 @media (max-width: 768px) {
     .cards {
