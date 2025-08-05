@@ -1,14 +1,26 @@
-@import url(https://fonts.googleapis.com/css2?family=Emilys+Candy);
+
 @import url(https://fonts.googleapis.com/css2?family=Yesteryear);
 @import url(https://fonts.googleapis.com/css2?family=My+Soul);
+@import url(https://fonts.googleapis.com/css2?family=Moon+Dance);
+@import url(https://fonts.googleapis.com/css2?family=Smooch);
+
+
+
 
 h1 {
     align-items: center;
     text-align: center;
     font-size: 30px;
-    font-family: 'Emilys Candy';
-    text-decoration: underline;
+    font-family: 'Smooch';
+    
 
+}
+
+p{
+    text-align: center;
+    font-size: 30px;
+    font-family: Moon Dance;
+   
 }
 
 .contact-page {

@@ -1,16 +1,25 @@
-<div class="navbar">
+<nav class="navbar">
 
-    <nav>
+    <!-- Logo -->
+    <h2 routerLink="/">Kamaso-Bits</h2>
 
-        <h2 routerLink="/">Kamaso-Bits</h2>
 
-        <ul>
-            <li class="li"><a class="linktext" routerLinkActive routerLink="packages">Services</a></li>
-            <li class="li"><a class="linktext" routerLinkActive routerLink="about">About</a> </li>
-            <li class="li"><a class="linktext" routerLinkActive routerLink="projects">Projects</a></li>
-            <li class="li"><a class="linktext" routerLinkActive routerLink="contact">Contact</a></li>
-        </ul>
+    <!-- Hamburger Icon For small Screens -->
+    <div class="hamburger" (click)="toggleMenu()" [class.open]="menuOpen">
 
-    </nav>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
 
-</div>
+    </div>
+
+
+    <!-- Menu Links -->
+    <ul [class.active]="menuOpen" class="nav-links">
+        <li><a routerLinkActive routerLink="packages">Services</a></li>
+        <li><a routerLinkActive routerLink="about">About</a> </li>
+        <li><a routerLinkActive routerLink="projects">Projects</a></li>
+        <li><a routerLinkActive routerLink="contact">Contact</a></li>
+    </ul>
+
+</nav>
