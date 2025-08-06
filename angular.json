@@ -15,6 +15,7 @@
           "options": {
             "outputPath": "dist/kamaso-bits-portifolio",
             "index": "src/index.html",
+            "baseHref": "/KamasoBits-portifolio/",
             "browser": "src/main.ts",
             "polyfills": [
               "zone.js"
@@ -96,6 +97,9 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }

@@ -1,0 +1,9 @@
+{
+  "routes": {
+    "/KamasoBits-Portifolio": {},
+    "/KamasoBits-Portifolio/about": {},
+    "/KamasoBits-Portifolio/contact": {},
+    "/KamasoBits-Portifolio/packages": {},
+    "/KamasoBits-Portifolio/projects": {}
+  }
+}
