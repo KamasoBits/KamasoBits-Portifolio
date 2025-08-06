@@ -10,4 +10,8 @@ import { Component } from '@angular/core';
 })
 export class ContactComponent {
 
+  onSubmit(){
+    alert("Submitted Successfully")
+  }
+
 }

@@ -4,22 +4,28 @@
 
 /* Three-Section Footer Styles */
 .footer {
-   
+
     background-color: rgba(206, 114, 114, 0.3);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     color: var(--footer-text-light);
-    padding-top: 30px; /* Padding for sections */
-    flex-shrink: 0; /* Prevents footer from shrinking */
+    padding-top: 30px;
+    /* Padding for sections */
+    flex-shrink: 0;
+    /* Prevents footer from shrinking */
 }
 
 .footer .footer-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* 3 columns, responsive */
-    gap: 30px; /* Space between columns */
-    padding-bottom: 40px; /* Space above bottom bar */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    /* 3 columns, responsive */
+    gap: 30px;
+    /* Space between columns */
+    padding-bottom: 40px;
+    /* Space above bottom bar */
     padding-left: 20px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /* Subtle separator */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    /* Subtle separator */
 }
 
 .footer-section {
@@ -67,7 +73,8 @@
     color: #2de69f;
 }
 
-.footer-section i { /* Icons within text/list items */
+.footer-section i {
+    /* Icons within text/list items */
     color: var(--accent-icon-color);
     margin-right: 8px;
     font-size: 1.1em;
@@ -79,14 +86,16 @@
 }
 
 .social-links a {
-    display: inline-flex; /* Use flex to center icon */
+    display: inline-flex;
+    /* Use flex to center icon */
     justify-content: center;
     align-items: center;
     width: 40px;
     height: 40px;
     background-color: rgba(255, 255, 255, 0.1);
     color: var(--footer-text-light);
-    border-radius: 50%; /* Make them round */
+    border-radius: 50%;
+    /* Make them round */
     text-decoration: none;
     margin-right: 10px;
     transition: background-color 0.3s ease, color 0.3s ease;
@@ -103,7 +112,7 @@
     background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    padding: 10px ;
+    padding: 10px;
     text-align: center;
     font-size: 1.5em;
     font-family: 'My Soul';
@@ -113,28 +122,29 @@
 /* --- Responsive Adjustments --- */
 @media (max-width: 768px) {
     .footer .footer-grid {
-        grid-template-columns: 1fr; /* Stack columns on smaller screens */
-        text-align: center; /* Center text for stacked layout */
-        padding-bottom: 20px; /* Reduce padding for mobile */
+        grid-template-columns: 1fr;
     }
 
-    .footer-section h3::after { /* Re-center underline for mobile */
+    .footer-section h3::after {
+        /* Re-center underline for mobile */
         left: 50%;
         transform: translateX(-50%);
     }
 
     .footer-section {
-        padding: 25px 0; /* More vertical padding between stacked sections */
-    }
-
-    .social-links {
-        text-align: center;
+        padding: 0;
+        /* More vertical padding between stacked sections */
     }
 
     .footer-section ul {
-        display: inline-block; /* Allow list items to be centered */
-        text-align: left; /* Keep list text aligned left */
+        display: inline-block;
+        /* Allow list items to be centered */
+        text-align: left;
+        /* Keep list text aligned left */
+    }
+
+    .footer-section ul li a:hover,
+    .footer-section p a:hover {
+        color: #2de69f;
     }
 }
-
-

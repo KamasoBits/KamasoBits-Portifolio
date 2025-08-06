@@ -23,12 +23,18 @@
 
 }
 
+ul{
+    border: 2px solid rgb(19, 18, 18);
+    border-radius: 30px;
+    align-items: center;
+}
+
 .nav-links {
     display: flex;
     list-style: none;
-    color: rgb(9, 9, 58);
-    width: 350px;
-    margin-right: 20px;
+    color: rgb(0, 0, 0);
+    width: 400px;
+    margin-right: 10px;
     gap: 1rem;
     transition: all 0.3s ease-in-out;
 
