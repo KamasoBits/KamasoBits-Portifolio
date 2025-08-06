@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Original+Surfer);
+@import url(https://fonts.googleapis.com/css2?family=Oldenburg);
 @import url(https://fonts.googleapis.com/css2?family=Playball);
 
 
@@ -8,19 +8,18 @@
   align-items: center;
   position: relative;
   overflow: hidden;
-  background-image: url('/assets/images/circuit.jpg');
+  background-image: url('/assets/images/comp1.jpg');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
   padding: 2rem;
   width: 100%;
   min-height: 80vh;
   height: auto;
   box-sizing: border-box;
-  border-radius: 20px 80px;
+  border-radius: 20px;
   font-size: 30px;
-  font-family: 'Original Surfer';
-  color: #000000;
+  font-family: 'Oldenburg';
+  
 }
 
 .details {
@@ -28,14 +27,17 @@
   width: 100%;
   padding: 1rem;
   text-align: center;
-  color: #000000;
+  color: #73dbdf;
   position: relative;
   z-index: 1;
 
 }
-h2{
-  font-size: 25px;
+
+h2 {
+  font-size: 35px;
+  font-weight: bold;
   font-family: Playball;
+  color: #c03c3c;
 }
 
 .btn {
@@ -59,6 +61,7 @@ h2{
 .wave-text span {
   display: inline-block;
   font-size: 3rem;
+  color: #1a0204;
   animation: wave 2s ease-in-out infinite;
 }
 
@@ -141,6 +144,7 @@ h2{
 
 /* Animation */
 .typewriter-animation {
+   color: #f8e321;
   animation:
     typewriter 5s steps(50) 1s 1 normal both,
     blinkingCursor 500ms steps(50) infinite normal;
@@ -152,13 +156,13 @@ h2{
   }
 
   to {
-    width: 42%;
+    width: 46%;
   }
 }
 
 @keyframes blinkingCursor {
   from {
-    border-right-color: rgba(255, 255, 255, .75);
+    border-right-color: rgba(65, 209, 22, 0.75);
   }
 
   to {
@@ -193,16 +197,20 @@ h2{
     font-size: 1.5rem;
   }
 
-  .wave-text {
-    font-size: 1.3rem;
+  .wave-text span {
+    font-size: 1.8rem;
+    color: #1a0204;
   }
 
   .typewriter-animation {
-    font-size: 1rem;
+    font-size: 0.75rem;
+    color: #f8e321;
   }
 
   h2 {
-    font-size: 1.1rem;
+    font-size: 1.8rem;
+    color: #c03c3c;
+
   }
 
   .btn {
@@ -212,34 +220,36 @@ h2{
 }
 
 @media (max-width: 480px) {
-.details-background{
-  width: auto;
-  height: 100px;
-}
-
+  .details-background{
+    min-height: 50vh;
+  }
   .wave-container {
     font-size: 1.5rem;
   }
 
-  .wave-text span{
-    font-size: 1.6rem;
+  .wave-text span {
+    font-size: 1.4rem;
+    color: #1a0204;
   }
 
   .typewriter-animation {
     font-size: 0.5rem;
-    
+   color: #f8e321;
+
   }
 
   h2 {
     font-size: 1.4rem;
+    font-weight: bolder;
+    margin-bottom: 1px;
+    color: #c03c3c;
   }
 
   .btn {
+    width: 130px;
+    height: 50px;
+    margin-bottom: 1px;
     padding: 0.6rem 1.2rem;
     font-size: 0.9rem;
-  }
-  .btn:hover{
-    color: #420642;
-  background-color: #b6f157;
   }
 }
