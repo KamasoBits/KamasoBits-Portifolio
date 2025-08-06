@@ -1,6 +1,6 @@
 
 export default {
-  basePath: '/',
+  basePath: '/kamaso-bit-portifolio',
   supportedLocales: {
   "en-US": ""
 },
