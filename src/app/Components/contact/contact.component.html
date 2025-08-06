@@ -1,18 +1,36 @@
 <h1>Talk To Us!!</h1>
 <p> Your Ideas, Our Expertise - A perfect Match!!!</p>
 
-<div class="contact-page">
+<div class="contact-wrapper">
 
     <div class="contact-form">
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-        <div class="details">
-            <input class="name" type="text" placeholder="Enter Name">
-            <input class="email" type="text" type="email" placeholder="your.email@example.com">
-            <input class="textarea" type="text" placeholder="Leave Comment">
-        </div>
+            <label for="email">Email:</label>
+            <input type="text" id="lname" name="lastname" placeholder="example.com">
+
+            <label for="country">Select Service:</label>
+            <select id="job" name="job">
+                <option value="frontend">Front End Development</option>
+                <option value="backend">Back End Development</option>
+                <option value="cloud">Cloud and Database</option>
+                <option value="it">IT Consultancy and Support</option>
+                <option value="apps">Mobile and Web Apps</option>
+                <option value="network">Network & Security</option>
+            </select>
 
 
-        <button class="btn">Submit</button>
+            <label for="textarea">Comment:</label>
+            <textarea>Breif Description/Comments...</textarea>
+
+            <a href="mailto:kitkatkamaso@gmail.com">
+                <button class="btn">Submit</button>
+            </a>
+
+        </form>
+
     </div>
 
 </div>
