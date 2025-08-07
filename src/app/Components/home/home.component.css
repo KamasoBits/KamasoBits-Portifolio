@@ -222,7 +222,7 @@ h2 {
 
 @media (max-width: 480px) {
   .details-background{
-    min-height: 40vh;
+    min-height: 30vh;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -237,7 +237,7 @@ h2 {
   }
 
   .typewriter-animation {
-    font-size: 0.4rem;
+    font-size: 0.3rem;
    color: #f8e321;
 
   }
