@@ -12,16 +12,5 @@ html {
   ));
 }
 
+@include mat.all-component-themes($custom-theme);
 
-
-html {
-  @include mat.theme((
-    color: (
-      theme-type: light,
-      primary: mat.$azure-palette,
-      tertiary: mat.$blue-palette,
-    ),
-    typography: Roboto,
-    density: 0,
-  ));
-}

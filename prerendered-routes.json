@@ -1,0 +1,9 @@
+{
+  "routes": {
+    "/kamasobits": {},
+    "/kamasobits/about": {},
+    "/kamasobits/contact": {},
+    "/kamasobits/packages": {},
+    "/kamasobits/projects": {}
+  }
+}
